@@ -67,8 +67,8 @@
             <div class="flex-1 hidden lg:block">
                 <input type="text" placeholder="Search "
                     class="input input-bordered w-24 md:w-[350px] rounded-3xl relative" />
-                <a class="absolute right-[250px] top-[100px]" href="">
-                    <img src="./images/Frame.svg" alt="">
+                <a class="absolute right-[235px] top-[100px]" href="">
+                    <img src="./images/Frame.png" alt="">
                 </a>
             </div>
             <div class="dropdown dropdown-end">
@@ -175,9 +175,9 @@
 
 
         <!-- Extra Banner Section -->
-        <section class="relative mb-32">
+        <section class="relative mb-32 hidden lg:block">
             <div
-                class="flex justify-evenly shadow-2xl  md:w-[1200px] text-center md:ml-[176px] py-10 rounded-xl absolute -top-32 ">
+                class="flex justify-evenly bg-white shadow-2xl  md:w-[1200px] text-center md:ml-[176px] py-10 rounded-xl absolute -top-32 ">
                 <div>
                     <img src="./images/fruit1.png" alt="">
                     <p>Strawberry</p>
@@ -208,7 +208,7 @@
     <main>
         <!-- Day Deal Section -->
         <section class="container mx-auto my-11">
-            <div class="flex justify-between">
+            <div class="flex flex-col lg:flex-row justify-between">
                 <div class=" space-y-5">
                     <h1 class="text-4xl font-extrabold">Deal of the day</h1>
                     <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
@@ -243,19 +243,21 @@
                 </div>
             </div>
             <!-- Card Section -->
-            <div>
-                <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="flex flex-col lg:flex-row  justify-center gap-6 my-12">
+
+
+                <!-- Card One (01) -->
+                <div class="card w-[342px] h-[420px]  bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">12.90$ - 18.85$</h2>
-                        <p>Apples</p>
+                        <h2 class="card-title ">12.90$ - 18.85$</h2>
+                        <p class="border-t-2 border-[rgba(18, 18, 18, 0.10)] w-[244px] mt-6">Apples</p>
                         <img src="./images/Group 24.svg" alt="">
                         <div class="card-actions">
                             <!-- Card Modal -->
-                            <a href="">
-                            </a><!-- Open the modal using ID.showModal() method -->
+                            <!-- Open the modal using ID.showModal() method -->
                             <button class="text-orange-400" onclick="my_modal_1.showModal()">details</button>
                             <dialog id="my_modal_1" class="modal">
                                 <form method="dialog" class="modal-box">
@@ -271,7 +273,117 @@
                                             <div class="card-actions">
                                                 <button class="btn">Close</button>
                                                 <button class="btn btn-primary">Buy Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
 
+
+                <!-- Card Two (02) -->
+                <div class="card w-[342px] bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <p class="border-t-2 border-[rgba(18, 18, 18, 0.10)] w-[244px] mt-6">Apples</p>
+                        <img src="./images/Group 24.svg" alt="">
+                        <div class="card-actions">
+                            <!-- Card Modal -->
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="text-orange-400" onclick="my_modal_2.showModal()">details</button>
+                            <dialog id="my_modal_2" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <div class="card  bg-base-100">
+                                        <figure class="px-10 pt-10">
+                                            <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center">
+                                            <h2 class="card-title">Orange</h2>
+                                            <p>Professional employees are there for you to pick the most amazing and
+                                                fresh fruits.</p>
+                                            <img src="./images/Group 24.svg" alt="">
+                                            <div class="card-actions">
+                                                <button class="btn">Close</button>
+                                                <button class="btn btn-primary">Buy Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Card Three (03) -->
+                <div class="card w-[342px] bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <p class="border-t-2 border-[rgba(18, 18, 18, 0.10)] w-[244px] mt-6">Apples</p>
+                        <img src="./images/Group 24.svg" alt="">
+                        <div class="card-actions">
+                            <!-- Card Modal -->
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="text-orange-400" onclick="my_modal_3.showModal()">details</button>
+                            <dialog id="my_modal_3" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <div class="card  bg-base-100">
+                                        <figure class="px-10 pt-10">
+                                            <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center">
+                                            <h2 class="card-title">Banana</h2>
+                                            <p>Professional employees are there for you to pick the most amazing and
+                                                fresh fruits.</p>
+                                            <img src="./images/Group 24.svg" alt="">
+                                            <div class="card-actions">
+                                                <button class="btn">Close</button>
+                                                <button class="btn btn-primary">Buy Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Card Four (04) -->
+                <div class="card w-[342px] bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <p class="border-t-2 border-[rgba(18, 18, 18, 0.10)] w-[244px] mt-6">Apples</p>
+                        <img src="./images/Group 24.svg" alt="">
+                        <div class="card-actions">
+                            <!-- Card Modal -->
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="text-orange-400" onclick="my_modal_4.showModal()">details</button>
+                            <dialog id="my_modal_4" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <div class="card  bg-base-100">
+                                        <figure class="px-10 pt-10">
+                                            <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center">
+                                            <h2 class="card-title">Apples</h2>
+                                            <p>Professional employees are there for you to pick the most amazing and
+                                                fresh fruits.</p>
+                                            <img src="./images/Group 24.svg" alt="">
+                                            <div class="card-actions">
+                                                <button class="btn">Close</button>
+                                                <button class="btn btn-primary">Buy Now</button>
                                             </div>
                                         </div>
                                     </div>
