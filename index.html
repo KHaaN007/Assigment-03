@@ -44,7 +44,7 @@
     </script>
 </head>
 
-<body class="container mx-auto">
+<body>
     <header class="container mx-auto">
 
 
@@ -408,7 +408,7 @@
 
 
         <!-- Team Section Start-->
-        <section>
+        <section class="container mx-auto">
             <div class="my-36">
                 <div class="hero md:h-[690px]" style="background-image: url(./images/banner2.png);">
                     <div class="hero-overlay bg-opacity-70 brightness-20"></div>
@@ -706,7 +706,7 @@
 
 
         <!-- Why Choose Us Section -->
-        <section>
+        <section class="container mx-auto">
             <div class="text-center mb-12">
                 <h1 class="text-5xl font-bold">Why Choose Us</h1>
                 <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
@@ -717,8 +717,8 @@
 
 
             <div class="flex mb-36">
-                <div class="flex flex-col md:flex-row gap-24">
-                    <div class="space-y-20">
+                <div class=" gap-24 grid lg:grid-cols-3 grid-rows-1">
+                    <div class="space-y-20 order-2 md:order-1 ">
                         <div class="flex">
                             <div class="mr-6 bg-[#1212121a] p-5 rounded-full w-16 h-16">
                                 <img src="./images/icon/group 1.png" alt="">
@@ -738,7 +738,7 @@
                         </div>
                         <div class="flex">
                             <div class="mr-6 bg-[#1212121a] p-5 rounded-full w-16 h-16">
-                                <img src="./images/icon/group 1.png" alt="">
+                                <img src="./images/icon/love 1.png" alt="">
                             </div>
                             <div>
                                 <h1 class="text-2xl font-extrabold">
@@ -755,7 +755,7 @@
                         </div>
                         <div class="flex">
                             <div class="mr-6 bg-[#1212121a] p-5 rounded-full w-16 h-16">
-                                <img src="./images/icon/group 1.png" alt="">
+                                <img src="./images/icon/gift-box 1.png" alt="">
                             </div>
                             <div>
                                 <h1 class="text-2xl font-extrabold">
@@ -776,7 +776,7 @@
                     <!--  -->
 
 
-                    <div class="">
+                    <div class="order-1 md:order-2">
                         <img src="./images/whychoose1.png" alt="">
                     </div>
 
@@ -784,10 +784,10 @@
                     <!--  -->
 
 
-                    <div class="space-y-20">
+                    <div class="space-y-20 order-3 md:order-3">
                         <div class="flex flex-row-reverse">
                             <div class="ml-6 bg-[#1212121a] p-5 rounded-full w-16 h-16">
-                                <img src="./images/icon/group 1.png" alt="">
+                                <img src="./images/icon/fruit 1.png" alt="">
                             </div>
                             <div>
                                 <h1 class="text-2xl font-extrabold text-end">
@@ -804,7 +804,7 @@
                         </div>
                         <div class="flex flex-row-reverse">
                             <div class="ml-6 bg-[#1212121a] p-5 rounded-full w-16 h-16">
-                                <img src="./images/icon/group 1.png" alt="">
+                                <img src="./images/icon/ice-cream 1.png" alt="">
                             </div>
                             <div>
                                 <h1 class="text-2xl font-extrabold text-end">
@@ -821,7 +821,7 @@
                         </div>
                         <div class="flex flex-row-reverse">
                             <div class="ml-6 bg-[#1212121a] p-5 rounded-full w-16 h-16">
-                                <img src="./images/icon/group 1.png" alt="">
+                                <img src="./images/icon/like 1.png" alt="">
                             </div>
                             <div>
                                 <h1 class="text-2xl font-extrabold text-end">
@@ -838,17 +838,35 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-
+            </div>  
         </section>
-
-
     </main>
 
 
-    <footer>
-
+    <!-- Footer Section -->
+        <footer class="footer footer-center h-[530px] p-10 bg-[#121212] text-base-content rounded">
+            <div class="navbar-center lg:flex flex-1 md:mx-52 mt-36">
+                <img src="./images/logo.png" alt="">
+                <a class="btn btn-ghost normal-case text-4xl md:text-white">Fruit Burst</a>
+            </div>
+            <div class="grid grid-cols-4 lg:grid-cols-6 gap-4 text-white font-semibold text-lg">
+              <a class="link link-hover ">Home</a> 
+              <a class="link link-hover">About Us</a> 
+              <a class="link link-hover">Shop</a> 
+              <a class="link link-hover">All Fruits</a>
+              <a class="link link-hover">Support</a>
+              <a class="link link-hover">My Account</a>
+            </div> 
+            <div>
+              <div class="grid grid-cols-4 lg:grid-cols-6 text-center gap-10">
+                <a href=""><img src="./images/Footer icon/twitter 1.png" alt=""></a>
+                <a href=""><img src="./images/Footer icon/facebook 1.png" alt=""></a>
+                <a href=""><img src="./images/Footer icon/Group 49.png" alt=""></a>
+                <a href=""><img src="./images/Footer icon/linkedin 1.png" alt=""></a>
+                <a href=""><img src="./images/Footer icon/instagram 1.png" alt=""></a>
+                <a href=""><img src="./images/Footer icon/apple 1.png" alt=""></a>
+              </div>
+            </div> 
     </footer>
 </body>
 
