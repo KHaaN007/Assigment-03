@@ -29,20 +29,10 @@
         }
     </style>
 
+
+
     <!--  -->
-
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'background-primary': '#F85559',
-                    }
-                }
-            }
-        }
-    </script>
+   
 </head>
 
 <body>
@@ -52,7 +42,7 @@
 
         <!-- NavBar Start-->
         <section>
-            <div class="navbar bg-base-100 flex justify-evenly md:bg-red-500 rounded-full md:my-14 py-7">
+            <div class="navbar bg-base-100 flex justify-evenly md:bg-[#F85559] rounded-full md:my-14 py-7">
                 <div class="navbar-start hidden lg:block flex-1">
                     <ul class="menu menu-horizontal text-lg px-1 font-medium text-white">
                         <li><a>Home</a></li>
@@ -63,7 +53,7 @@
                 </div>
                 <div class="navbar-center lg:flex flex-1 md:mx-52">
                     <img src="./images/logo.png" alt="">
-                    <a class="btn btn-ghost normal-case text-4xl md:text-white">Fruit Burst</a>
+                    <a class="btn btn-ghost normal-case text-4xl md:text-white ">Fruit Burst</a>
                 </div>
                 <div class="flex-1 hidden lg:block">
                     <input type="text" placeholder="Search "
@@ -87,7 +77,10 @@
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
                         <li>
-                            <input type="search" name="" id="" placeholder="Search" class="border-2">
+                            <input type="search" name="" id="" placeholder="Search" class="border-2 relative">
+                            <a class="absolute bottom-[1px] left-36" href="">
+                                <img src="./images/Frame.png" alt="">
+                            </a>
                         </li>
 
                     </ul>
@@ -112,7 +105,7 @@
                                         your <br>
                                         doorstep
                                     </h1>
-                                    <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                                    <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
                                     <button class="btn bg-red-500 border-0 text-white">Shop Now</button>
                                 </div>
                             </div>
@@ -131,7 +124,7 @@
                                         your <br>
                                         doorstep
                                     </h1>
-                                    <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                                    <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
                                     <button class="btn bg-red-500 border-0 text-white">Shop Now</button>
                                 </div>
                             </div>
@@ -150,7 +143,7 @@
                                         your <br>
                                         doorstep
                                     </h1>
-                                    <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                                    <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
                                     <button class="btn bg-red-500 border-0 text-white">Shop Now</button>
                                 </div>
                             </div>
@@ -169,7 +162,7 @@
                                         your <br>
                                         doorstep
                                     </h1>
-                                    <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                                    <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
                                     <button class="btn bg-red-500 border-0 text-white">Shop Now</button>
                                 </div>
                             </div>
@@ -190,23 +183,23 @@
                     class="flex justify-evenly bg-white shadow-2xl  md:w-[1200px] text-center md:ml-[176px] py-10 rounded-xl absolute -top-32 ">
                     <div>
                         <img src="./images/fruit1.png" alt="">
-                        <p>Strawberry</p>
+                        <p class="text-xl font-medium text-[#121212CC]">Strawberry</p>
                     </div>
                     <div>
                         <img src="./images/fruit2.png" alt="">
-                        <p>Orange</p>
+                        <p class="text-xl font-medium text-[#121212CC]">Orange</p>
                     </div>
                     <div>
                         <img src="./images/fruit3.png" alt="">
-                        <p>Mango</p>
+                        <p class="text-xl font-medium text-[#121212CC]">Mango</p>
                     </div>
                     <div>
                         <img src="./images/fruit4.png" alt="">
-                        <p>Strawberry</p>
+                        <p class="text-xl font-medium text-[#121212CC]">Strawberry</p>
                     </div>
                     <div>
                         <img src="./images/fruit5.png" alt="">
-                        <p>Pomegranate</p>
+                        <p class="text-xl font-medium text-[#121212CC]">Pomegranate</p>
                     </div>
                 </div>
             </section>
@@ -218,12 +211,11 @@
 
     <main>
         <!-- Day Deal Section -->
-        <section class="container mx-auto mb-12 mt-36">
+        <section class="container mx-auto mb-12 mt-36 p-7 lg:p-0">
             <div class="flex flex-col lg:flex-row text-center lg:text-start justify-between">
                 <div class=" space-y-5 ">
-                    <h1 class="text-4xl font-extrabold">Deal of the day</h1>
-                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
-                        Latin literature from 45 BC, making it over 2000 years old.</p>
+                    <h1 class="text-5xl font-extrabold ">Deal of the day</h1>
+                    <p class="text-[#12121299] font-medium text-xl ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 <div class="flex justify-evenly gap-6 items-center text-center my-10">
                     <div>
@@ -263,15 +255,15 @@
                         <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title ">12.90$ - 18.85$</h2>
+                        <h2 class="text-2xl font-bold text-gray-900">12.90$ - 18.85$</h2>
                         <div class="border-t-2 border-[rgba(18, 18, 18, 0.10)] w-[244px] my-5">
                         </div>
-                        <p>Apples</p>
+                        <p class="text-[#12121299] font-medium text-lg">Apples</p>
                         <img src="./images/Group 24.svg" alt="">
                         <div class="card-actions">
                             <!-- Card Modal -->
                             <!-- Open the modal using ID.showModal() method -->
-                            <button class="text-orange-400" onclick="my_modal_1.showModal()">details</button>
+                            <button class="text-[#F85559] text-lg font-bold" onclick="my_modal_1.showModal()">Details</button>
                             <dialog id="my_modal_1" class="modal">
                                 <form method="dialog" class="modal-box">
                                     <div class="card  bg-base-100">
@@ -279,9 +271,8 @@
                                             <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
                                         </figure>
                                         <div class="card-body items-center text-center">
-                                            <h2 class="card-title">Apples</h2>
-                                            <p>Professional employees are there for you to pick the most amazing and
-                                                fresh fruits.</p>
+                                            <h2 class="text-4xl font-extrabold">Apples</h2>
+                                            <p class="font-medium text-lg text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                                             <img src="./images/Group 24.svg" alt="">
                                             <div class="card-actions">
                                                 <button class="btn btn-outline btn-error">Close</button>
@@ -302,15 +293,15 @@
                         <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <h2 class="text-2xl font-bold text-gray-900">12.90$ - 18.85$</h2>
                         <div class="border-t-2 border-[rgba(18, 18, 18, 0.10)] w-[244px] my-5">
                         </div>
-                        <p>Orange</p>
+                        <p class="text-[#12121299] font-medium text-lg">Orange</p>
                         <img src="./images/Group 24.svg" alt="">
                         <div class="card-actions">
                             <!-- Card Modal -->
                             <!-- Open the modal using ID.showModal() method -->
-                            <button class="text-orange-400" onclick="my_modal_2.showModal()">details</button>
+                            <button class="text-[#F85559] text-lg font-bold" onclick="my_modal_2.showModal()">Details</button>
                             <dialog id="my_modal_2" class="modal">
                                 <form method="dialog" class="modal-box">
                                     <div class="card  bg-base-100">
@@ -318,8 +309,8 @@
                                             <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
                                         </figure>
                                         <div class="card-body items-center text-center">
-                                            <h2 class="card-title">Orange</h2>
-                                            <p>Professional employees are there for you to pick the most amazing and
+                                            <h2 class="text-4xl font-extrabold">Orange</h2>
+                                            <p class="font-medium text-lg text-[#12121299]">Professional employees are there for you to pick the most amazing and
                                                 fresh fruits.</p>
                                             <img src="./images/Group 24.svg" alt="">
                                             <div class="card-actions">
@@ -341,15 +332,15 @@
                         <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <h2 class="text-2xl font-bold text-gray-900">12.90$ - 18.85$</h2>
                         <div class="border-t-2 border-[rgba(18, 18, 18, 0.10)] w-[244px] my-5">
                         </div>
-                        <p>Red Dragon</p>
+                        <p class="text-[#12121299] font-medium text-lg">Red Dragon</p>
                         <img src="./images/Group 24.svg" alt="">
                         <div class="card-actions">
                             <!-- Card Modal -->
                             <!-- Open the modal using ID.showModal() method -->
-                            <button class="text-orange-400" onclick="my_modal_3.showModal()">details</button>
+                            <button class="text-[#F85559] text-lg font-bold" onclick="my_modal_3.showModal()">Details</button>
                             <dialog id="my_modal_3" class="modal">
                                 <form method="dialog" class="modal-box">
                                     <div class="card  bg-base-100">
@@ -357,8 +348,8 @@
                                             <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
                                         </figure>
                                         <div class="card-body items-center text-center">
-                                            <h2 class="card-title">Red Dragon</h2>
-                                            <p>Professional employees are there for you to pick the most amazing and
+                                            <h2 class="text-4xl font-extrabold">Red Dragon</h2>
+                                            <p class="font-medium text-lg text-[#12121299]">Professional employees are there for you to pick the most amazing and
                                                 fresh fruits.</p>
                                             <img src="./images/Group 24.svg" alt="">
                                             <div class="card-actions">
@@ -380,15 +371,15 @@
                         <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <h2 class="text-2xl font-bold text-gray-900">12.90$ - 18.85$</h2>
                         <div class="border-t-2 border-[rgba(18, 18, 18, 0.10)] w-[244px] my-5">
                         </div>
-                        <p>Banana</p>
+                        <p class="text-[#12121299] font-medium text-lg">Banana</p>
                         <img src="./images/Group 24.svg" alt="">
                         <div class="card-actions">
                             <!-- Card Modal -->
                             <!-- Open the modal using ID.showModal() method -->
-                            <button class="text-orange-400" onclick="my_modal_4.showModal()">details</button>
+                            <button class="text-[#F85559] text-lg font-bold" onclick="my_modal_4.showModal()">Details</button>
                             <dialog id="my_modal_4" class="modal">
                                 <form method="dialog" class="modal-box">
                                     <div class="card  bg-base-100">
@@ -396,8 +387,8 @@
                                             <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
                                         </figure>
                                         <div class="card-body items-center text-center">
-                                            <h2 class="card-title">Banana</h2>
-                                            <p>Professional employees are there for you to pick the most amazing and
+                                            <h2 class="text-4xl font-extrabold">Banana</h2>
+                                            <p class="font-medium text-lg text-[#12121299]">Professional employees are there for you to pick the most amazing and
                                                 fresh fruits.</p>
                                             <img src="./images/Group 24.svg" alt="">
                                             <div class="card-actions">
@@ -428,7 +419,7 @@
                     <div class="hero-content text-center text-neutral-content">
                         <div class="">
                             <h1 class="mb-5 text-5xl font-extrabold text-white">Meet the team section</h1>
-                            <p class="mb-10">Contrary to popular belief, is not simply random text. It has roots in a
+                            <p class="mb-10 text-lg font-medium">Contrary to popular belief, is not simply random text. It has roots in a
                                 piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.pturi
                                 exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-1  lg:gap-36  ">
@@ -722,7 +713,7 @@
         <section class="container mx-auto">
             <div class="text-center mb-12">
                 <h1 class="text-5xl font-bold">Why Choose Us</h1>
-                <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                <p class="mb-10 text-lg font-medium text-[#12121299]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
                     Latin
                     literature from 45 BC, making it over 2000 years old.</p>
             </div>
@@ -813,7 +804,7 @@
                                 <div class="border-t-2 border-black w-24 mx-auto lg:ml-56">
 
                                 </div>
-                                <p class="text-center lg:text-end">
+                                <p class="text-center lg:text-end font-medium text-[#12121299]">
                                     Professional employees are there for you to pick <br> the most amazing and fresh
                                     fruits.
                                 </p>
@@ -831,7 +822,7 @@
                                 <div class="border-t-2 border-black w-24 mx-auto lg:ml-56">
 
                                 </div>
-                                <p class="text-center lg:text-end">
+                                <p class=" text-center lg:text-end font-medium text-[#12121299]">
                                     Professional employees are there for you to pick <br> the most amazing and fresh
                                     fruits.
                                 </p>
@@ -849,7 +840,7 @@
                                 <div class="border-t-2 border-black w-24 mx-auto lg:ml-56">
 
                                 </div>
-                                <p class="text-center lg:text-end">
+                                <p class="text-center lg:text-end font-medium text-[#12121299]">
                                     Professional employees are there for you to pick <br> the most amazing and fresh
                                     fruits.
                                 </p>
@@ -863,12 +854,12 @@
 
 
     <!-- Footer Section -->
-    <footer class="footer footer-center h-[530px] p-10 bg-[#121212] text-base-content rounded">
-        <div class="navbar-center lg:flex flex-1 md:mx-52 mt-36">
+    <footer class="footer footer-center  p-10 bg-[#121212] text-base-content rounded">
+        <div class="navbar-center flex flex-1 md:mx-52 mt-36">
             <img src="./images/logo.png" alt="">
             <a class="btn btn-ghost normal-case text-4xl text-white">Fruit Burst</a>
         </div>
-        <div class="grid grid-cols-4 lg:grid-cols-6 gap-4 text-white font-semibold text-lg">
+        <div class="flex flex-wrap gap-8 md:gap-14 text-white font-semibold text-lg my-5 md:my-12 items-center justify-center ">
             <a class="link link-hover ">Home</a>
             <a class="link link-hover">About Us</a>
             <a class="link link-hover">Shop</a>
@@ -877,7 +868,7 @@
             <a class="link link-hover">My Account</a>
         </div>
         <div>
-            <div class="grid grid-cols-4 lg:grid-cols-6 text-center gap-10">
+            <div class="flex gap-10 justify-center items-center text-center ">
                 <a href=""><img src="./images/Footer icon/twitter 1.png" alt=""></a>
                 <a href=""><img src="./images/Footer icon/facebook 1.png" alt=""></a>
                 <a href=""><img src="./images/Footer icon/Group 49.png" alt=""></a>
